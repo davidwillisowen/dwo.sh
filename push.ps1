@@ -63,7 +63,7 @@ if (-not (Test-Path "images.py")) {
 
 # Execute the Python script
 try {
-    & $pythonCommand images.py
+    & $pythonCommand images-windows.py
 } catch {
     Write-Error "Failed to process image links."
     exit 1
