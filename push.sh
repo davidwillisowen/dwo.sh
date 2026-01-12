@@ -30,7 +30,7 @@ if [ ! -d "$destinationPath" ]; then
     exit 1
 fi
 
-rsync -av "$sourcePath" "$destinationPath"
+rsync -av --delete "$sourcePath" "$destinationPath"
 
 # Step 2: Process Markdown files with Python script to handle image links
 echo "Processing image links in Markdown files..."

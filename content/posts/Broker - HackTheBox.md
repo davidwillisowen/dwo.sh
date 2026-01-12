@@ -5,8 +5,6 @@ tags:
   - hackthebox
   - linux
 ---
-# Broker - HackTheBox
-
 ![Image Description](/images/Pasted%20image%2020260112112319.png)
 
 <!--more-->
