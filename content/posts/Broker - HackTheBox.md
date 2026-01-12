@@ -289,7 +289,7 @@ chmod 600 root_key
 ssh -i root_key root@10.129.230.87
 ```
 
-I GOT IT! I am now in... but now without tribulation. I tried to use ssh as activemq on the broker machine, and it didn't work. It worked when I copied it to my local machine and used it. Why?
+I GOT IT! I am now in... but NOT without tribulation. I tried to use ssh as activemq on the broker machine, and it didn't work. It worked when I copied it to my local machine and used it. Why?
 
 Ahh... I could have used `ssh root@localhost`, silly me. Nonetheless, we got there!
 
