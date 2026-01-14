@@ -11,6 +11,7 @@ copyright = "© David Willis-Owen"
   # the list of set content will show up on your index page (baseurl).
   contentTypeName = "posts"
   
+  customCss = ["css/extended.css"]  
   # if you set this to 0, only submenu trigger will be visible
   showMenuItems = 2
 

@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+:root {
+    --font-family: 'Open Sans', sans-serif !important;
+    --code-font-family: 'Open Sans', sans-serif !important;
+}
+
+*:before, *:after {
+    font-family: 'Open Sans', sans-serif !important;
+}
