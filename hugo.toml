@@ -13,7 +13,7 @@ copyright = "© David Willis-Owen"
   
   customCss = ["css/extended.css"]  
   # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 2
+  showMenuItems = 4 
 
   # show selector to switch language
   showLanguageSelector = false
@@ -82,11 +82,23 @@ copyright = "© David Willis-Owen"
       [languages.en.menu]
         [[languages.en.menu.main]]
           identifier = "home"
-          name = "Home"
+          name = "home"
           url = "/"
 	  weight = 10
+
         [[languages.en.menu.main]]
           identifier = "about"
-          name = "About"
+          name = "about"
           url = "/about"
 	  weight = 20
+
+	[[languages.en.menu.main]]
+	  identifier = "whoami"
+	  name = "whoami"
+	  url = "/whoami"
+	  weight = 30
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
