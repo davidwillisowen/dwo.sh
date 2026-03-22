@@ -56,7 +56,7 @@ if ($LASTEXITCODE -ge 8) {
 
 # Step 2: Process Markdown files with Python script to handle image links
 Write-Host "Processing image links in Markdown files..."
-if (-not (Test-Path "images.py")) {
+if (-not (Test-Path "images-windows.py")) {
     Write-Error "Python script images.py not found."
     exit 1
 }
