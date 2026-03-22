@@ -1,15 +1,19 @@
 baseurl = "/"
 languageCode = "en-us"
+# Add it only if you keep the theme in the `themes` directory.
+# Remove it if you use the theme as a remote Hugo Module.
 theme = "terminal"
 pagination.pagerSize = 5
+copyright = "© David Willis-Owen"
 
 [params]
   # dir name of your main content (default is `content/posts`).
   # the list of set content will show up on your index page (baseurl).
   contentTypeName = "posts"
-
+  
+  customCss = ["css/extended.css"]  
   # if you set this to 0, only submenu trigger will be visible
-  showMenuItems = 2
+  showMenuItems = 4 
 
   # show selector to switch language
   showLanguageSelector = false
@@ -18,7 +22,7 @@ pagination.pagerSize = 5
   fullWidthTheme = false
 
   # center theme with default width
-  centerTheme = false
+  centerTheme = true
 
   # if your resource directory contains an image called `cover.(jpg|png|webp)`,
   # then the file will be used as a cover automatically.
@@ -77,10 +81,24 @@ pagination.pagerSize = 5
 
       [languages.en.menu]
         [[languages.en.menu.main]]
-          identifier = "about"
-          name = "About"
-          url = "/about"
+          identifier = "home"
+          name = "home"
+          url = "/"
+	  weight = 10
+
         [[languages.en.menu.main]]
-          identifier = "showcase"
-          name = "Showcase"
-          url = "/showcase"
+          identifier = "about"
+          name = "about"
+          url = "/about"
+	  weight = 20
+
+	[[languages.en.menu.main]]
+	  identifier = "whoami"
+	  name = "whoami"
+	  url = "/whoami"
+	  weight = 30
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
