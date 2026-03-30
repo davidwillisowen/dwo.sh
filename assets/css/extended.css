@@ -9,10 +9,13 @@ p, li, .post-content, blockquote {
     font-family: 'Open Sans', sans-serif !important;
 }
 
-.post-content img, article img {
+article img, .post-content img {
     display: block;
-    margin: 1.5rem auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 0;
+    margin-right: auto;
     width: 100%;
-    max-width: 600px;
+    max-width: 300px;
     height: auto;
 }
