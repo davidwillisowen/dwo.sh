@@ -1,6 +1,6 @@
 ---
 title: Broker - HackTheBox
-date: 2025-01-12
+date: 2026-01-12
 tags:
   - hackthebox
   - linux

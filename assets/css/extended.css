@@ -8,3 +8,11 @@
 p, li, .post-content, blockquote {
     font-family: 'Open Sans', sans-serif !important;
 }
+
+.post-content img, article img {
+    display: block;
+    margin: 1.5rem auto;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
