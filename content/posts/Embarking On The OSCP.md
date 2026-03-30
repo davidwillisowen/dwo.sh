@@ -4,7 +4,7 @@ date: 2026-03-17
 tags:
   - oscp
 ---
-!![Image Description](/images/Pasted%20image%2020260317164353.png)
+![Image Description](/images/Pasted%20image%2020260317164353.png)
 <!--more-->
 Hi, David here. It's been too long!
 

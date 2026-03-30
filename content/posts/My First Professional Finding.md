@@ -4,7 +4,7 @@ date: 2026-03-28
 tags:
   - findings
 ---
-!![Image Description](/images/Pasted%20image%2020260328194637.png)
+![Image Description](/images/Pasted%20image%2020260328194637.png)
 <!--more-->
 After 8 weeks as a professional penetration tester, I finally achieved my first finding - a high severity vulnerability that led to an escalated incident. While I have found a few vulnerabilities in the past via responsible disclosure programs before getting a penetration testing job, it feels incredibly validating to succeed in a professional context!
 

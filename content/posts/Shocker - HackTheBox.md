@@ -5,7 +5,7 @@ tags:
   - hackthebox
   - linux
 ---
-!![Image Description](/images/Pasted%20image%2020260120161129.png)
+![Image Description](/images/Pasted%20image%2020260120161129.png)
 <!--more-->
 ## Introduction
 
