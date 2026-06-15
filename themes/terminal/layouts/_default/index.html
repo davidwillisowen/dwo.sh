@@ -48,8 +48,6 @@
             {{ .Content }}
           {{ else if .Description }}
             <p>{{ .Description | markdownify }}</p>
-          {{ else }}
-            {{ .Summary }}
           {{ end }}
         </div>
 

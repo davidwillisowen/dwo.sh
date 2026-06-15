@@ -5,7 +5,6 @@ tags:
   - hackthebox
   - linux
 ---
-![Image Description](/images/Pasted%20image%2020260116094520.png)
 <!--more-->
 ## Introduction
 
@@ -51,7 +50,7 @@ Only 2 ports are open - 80, and 22. So this will likely require some kind of web
 
 I'll check the website out manually to gain an understanding on what its purpose is and the core technologies it uses.
 
-!![Image Description](/images/Pasted%20image%2020260116100203.png)
+![Image Description](/images/Pasted%20image%2020260116100203.png)
 
 Interesting. My gut instinct is to run a directory enumeration to check for other endpoints, examine the HTTP Request for any interesting logic, and look for any CVE's associated with the underlying framework. The guide asks me to provide the PHP framework used, which is laravel (found by the cookie name of laravel_session).
 
@@ -107,7 +106,7 @@ First, visiting cgi-bin... it brings back a 404.
 
 Next, visiting register...
 
-!![Image Description](/images/Pasted%20image%2020260116103254.png)
+![Image Description](/images/Pasted%20image%2020260116103254.png)
 
 Intriguing.
 
@@ -190,7 +189,7 @@ The developer made some flaws... first, they were not strict about how the passw
 
 Now, we have access to the website. We are greeted with 2 downloadable files - one of which is the user flag:
 
-!![Image Description](/images/Pasted%20image%2020260116133408.png)
+![Image Description](/images/Pasted%20image%2020260116133408.png)
 
 Downloading the `homedirectory.zip` file reveals that it is encrypted.
 

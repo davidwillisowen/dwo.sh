@@ -5,7 +5,6 @@ tags:
   - hackthebox
   - linux
 ---
-![Image Description](/images/Pasted%20image%2020260112112319.png)
 <!--more-->
 ## Enumeration
 

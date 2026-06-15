@@ -4,7 +4,7 @@ I'm David Willis-Owen, a UK-based Cybersecurity professional. I started working 
 
 This is me:
 
-<img src="/images/david-willis-owen.png" alt="David Willis-Owen" width="250">
+<img src="/david-willis-owen.png" alt="David Willis-Owen" width="250">
 
 Offensive Security is my passion! I love learning about attack techniques, especially in a practical way. This doesn't feel like work for me, and I'm truly blessed that my passion is my job.
 

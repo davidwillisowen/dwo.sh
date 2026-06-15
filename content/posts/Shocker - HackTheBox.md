@@ -5,7 +5,6 @@ tags:
   - hackthebox
   - linux
 ---
-![Image Description](/images/Pasted%20image%2020260120161129.png)
 <!--more-->
 ## Introduction
 
@@ -63,17 +62,17 @@ Starting gobuster in directory enumeration mode
 
 The guide is hinting that I need to find a file in cgi-bin. I'll crack it open in Burp Suite and fiddle with some HTTP Headers/Params. Failing that, we can brute force for common file names. Let's give it a shot!
 
-!![Image Description](/images/Pasted%20image%2020260120162612.png)
+![Image Description](/images/Pasted%20image%2020260120162612.png)
 
 I don't see much in this request! Next, I'm going to look up "fuzzing cgi-bin" and "common files in cgi-bin" as a different avenue
 
 Ok, so nothing jumps out. I'm going to try out `ffuf -u http://$IP/cgi-bin/FUZZ.sh -w big.txt` to see if I can brute force a script...
 
-!![Image Description](/images/Pasted%20image%2020260120163216.png)
+![Image Description](/images/Pasted%20image%2020260120163216.png)
 
 No way... is there a user.sh script?
 
-!![Image Description](/images/Pasted%20image%2020260120163323.png)
+![Image Description](/images/Pasted%20image%2020260120163323.png)
 
 Oh yes there is! This appears to be the output from using the `uptime` command in Unix.
 

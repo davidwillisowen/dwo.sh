@@ -90,6 +90,12 @@ cd ..
 
 # Step 10: Commit and push source repository changes
 echo "Staging source repository changes..."
+if git diff --quiet && git diff --cached --quiet && git ls-files --others --exclude-standard | grep -q '^'; then
+    # We also check for untracked files with ls-files, but wrapping it all simply with 'git status --porcelain' is easier.
+    # Let's simplify the diff check.
+fi
+
+# A better check for changes in the source repo
 if [ -z "$(git status --porcelain)" ]; then
     echo "No changes in source repository to stage."
 else
